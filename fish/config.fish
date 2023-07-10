@@ -54,3 +54,4 @@ fish_add_path /Users/saulgoodman/.cargo/bin
 fish_add_path /Users/saulgoodman/Library/Python/3.9/bin
 
 thefuck --alias | source
+fish_add_path /Users/pinkfloyd/.spicetify

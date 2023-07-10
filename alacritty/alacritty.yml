@@ -31,16 +31,16 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 215
-    lines: 62
+    columns: 214
+    lines: 61
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   position:
-    x: 20
-    y: 0
+    x: 28
+    y: 80
 
   # Window padding (changes require restart)
   #
@@ -445,7 +445,7 @@ shell:
     - -A
     - -D
     - -s
-    - main
+    - Main
 
 # Startup directory
 #
@@ -866,62 +866,62 @@ shell:
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
 key_bindings:
-  - {key: V, mods: Command, action: Paste}
-  - {key: C, mods: Command, action: Copy}
-  - {key: Q, mods: Command, action: Quit}
-  - {key: N, mods: Command, action: SpawnNewInstance}
-  - {key: Return, mods: Command, action: ToggleFullscreen}
+  - {key: V,        mods: Command,        action: Paste}
+  - {key: C,        mods: Command,        action: Copy}
+  - {key: N,        mods: Command,        action: SpawnNewInstance}
+  - {key: Q,        mods: Command,        action: Quit}
+  - {key: Return,   mods: Command,        action: ToggleFullscreen}
 
-  - {key: Home, chars: "\eOH", mode: AppCursor}
-  - {key: Home, chars: "\e[H", mode: ~AppCursor}
-  - {key: End, chars: "\eOF", mode: AppCursor}
-  - {key: End, chars: "\e[F", mode: ~AppCursor}
-  - {key: Equals, mods: Command, action: IncreaseFontSize}
-  - {key: Minus, mods: Command, action: DecreaseFontSize}
-  - {key: Minus, mods: Command|Shift, action: ResetFontSize}
-  - {key: PageUp, mods: Shift, chars: "\e[5;2~"}
-  - {key: PageUp, mods: Control, chars: "\e[5;5~"}
-  - {key: PageUp, chars: "\e[5~"}
-  - {key: PageDown, mods: Shift, chars: "\e[6;2~"}
-  - {key: PageDown, mods: Control, chars: "\e[6;5~"}
-  - {key: PageDown, chars: "\e[6~"}
-  - {key: Left, mods: Shift, chars: "\e[1;2D"}
-  - {key: Left, mods: Control, chars: "\e[1;5D"}
-  - {key: Left, mods: Alt, chars: "\e[1;3D"}
-  - {key: Left, chars: "\e[D", mode: ~AppCursor}
-  - {key: Left, chars: "\eOD", mode: AppCursor}
-  - {key: Right, mods: Shift, chars: "\e[1;2C"}
-  - {key: Right, mods: Control, chars: "\e[1;5C"}
-  - {key: Right, mods: Alt, chars: "\e[1;3C"}
-  - {key: Right, chars: "\e[C", mode: ~AppCursor}
-  - {key: Right, chars: "\eOC", mode: AppCursor}
-  - {key: Up, mods: Shift, chars: "\e[1;2A"}
-  - {key: Up, mods: Control, chars: "\e[1;5A"}
-  - {key: Up, mods: Alt, chars: "\e[1;3A"}
-  - {key: Up, chars: "\e[A", mode: ~AppCursor}
-  - {key: Up, chars: "\eOA", mode: AppCursor}
-  - {key: Down, mods: Shift, chars: "\e[1;2B"}
-  - {key: Down, mods: Control, chars: "\e[1;5B"}
-  - {key: Down, mods: Alt, chars: "\e[1;3B"}
-  - {key: Down, chars: "\e[B", mode: ~AppCursor}
-  - {key: Down, chars: "\eOB", mode: AppCursor}
-  - {key: Tab, mods: Shift, chars: "\e[Z"}
-  - {key: F1, chars: "\eOP"}
-  - {key: F2, chars: "\eOQ"}
-  - {key: F3, chars: "\eOR"}
-  - {key: F4, chars: "\eOS"}
-  - {key: F5, chars: "\e[15~"}
-  - {key: F6, chars: "\e[17~"}
-  - {key: F7, chars: "\e[18~"}
-  - {key: F8, chars: "\e[19~"}
-  - {key: F9, chars: "\e[20~"}
-  - {key: F10, chars: "\e[21~"}
-  - {key: F11, chars: "\e[23~"}
-  - {key: F12, chars: "\e[24~"}
-  - {key: Back, chars: "\x7F"}
-  - {key: Back, mods: Alt, chars: "\e\x7F"}
-  - {key: Insert, chars: "\e[2~"}
-  - {key: Delete, chars: "\e[3~"}
+  - {key: Home,                           chars: "\eOH",        mode: AppCursor}
+  - {key: Home,                           chars: "\e[H",        mode: ~AppCursor}
+  - {key: End,                            chars: "\eOF",        mode: AppCursor}
+  - {key: End,                            chars: "\e[F",        mode: ~AppCursor}
+  - {key: Minus,    mods: Command|Alt,    action: IncreaseFontSize}
+  - {key: Minus,    mods: Command,        action: DecreaseFontSize}
+  - {key: PageUp,   mods: Shift,          chars: "\e[5;2~"}
+  - {key: Minus,    mods: Command|Shift,  action: ResetFontSize}
+  - {key: PageUp,   mods: Control,        chars: "\e[5;5~"}
+  - {key: PageUp,                         chars: "\e[5~"}
+  - {key: PageDown, mods: Shift,          chars: "\e[6;2~"}
+  - {key: PageDown, mods: Control,        chars: "\e[6;5~"}
+  - {key: PageDown,                       chars: "\e[6~"}
+  - {key: Left,     mods: Shift,          chars: "\e[1;2D"}
+  - {key: Left,     mods: Control,        chars: "\e[1;5D"}
+  - {key: Left,     mods: Alt,            chars: "\e[1;3D"}
+  - {key: Left,                           chars: "\e[D",        mode: ~AppCursor}
+  - {key: Left,                           chars: "\eOD",        mode: AppCursor}
+  - {key: Right,    mods: Shift,          chars: "\e[1;2C"}
+  - {key: Right,    mods: Control,        chars: "\e[1;5C"}
+  - {key: Right,    mods: Alt,            chars: "\e[1;3C"}
+  - {key: Right,                          chars: "\e[C",        mode: ~AppCursor}
+  - {key: Right,                          chars: "\eOC",        mode: AppCursor}
+  - {key: Up,       mods: Shift,          chars: "\e[1;2A"}
+  - {key: Up,       mods: Control,        chars: "\e[1;5A"}
+  - {key: Up,       mods: Alt,            chars: "\e[1;3A"}
+  - {key: Up,                             chars: "\e[A",        mode: ~AppCursor}
+  - {key: Up,                             chars: "\eOA",        mode: AppCursor}
+  - {key: Down,     mods: Shift,          chars: "\e[1;2B"}
+  - {key: Down,     mods: Control,        chars: "\e[1;5B"}
+  - {key: Down,     mods: Alt,            chars: "\e[1;3B"}
+  - {key: Down,                           chars: "\e[B",        mode: ~AppCursor}
+  - {key: Down,                           chars: "\eOB",        mode: AppCursor}
+  - {key: Tab,      mods: Shift,          chars: "\e[Z"}
+  - {key: F1,                             chars: "\eOP"}
+  - {key: F2,                             chars: "\eOQ"}
+  - {key: F3,                             chars: "\eOR"}
+  - {key: F4,                             chars: "\eOS"}
+  - {key: F5,                             chars: "\e[15~"}
+  - {key: F6,                             chars: "\e[17~"}
+  - {key: F7,                             chars: "\e[18~"}
+  - {key: F8,                             chars: "\e[19~"}
+  - {key: F9,                             chars: "\e[20~"}
+  - {key: F10,                            chars: "\e[21~"}
+  - {key: F11,                            chars: "\e[23~"}
+  - {key: F12,                            chars: "\e[24~"}
+  - {key: Back,                           chars: "\x7F"}
+  - {key: Back,     mods: Alt,            chars: "\e\x7F"}
+  - {key: Insert,                         chars: "\e[2~"}
+  - {key: Delete,                         chars: "\e[3~"}
 #debug:
   # Display the time it takes to redraw each frame.
   #render_timer: false
@@ -949,7 +949,8 @@ colors:
   # COLORSCHEME: palenight.yml
   # Default colors
   primary:
-    background: '0x222335'
+    background: '0x222133'
+    # background: '0x222335'
     foreground: '0xd0d0d0'
 
   # Normal colors
