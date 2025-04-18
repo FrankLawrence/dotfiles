@@ -1,0 +1,10 @@
+htop
+.bash_history
+.config/Tagstudio
+.config/htop
+.config/lazysql
+.config/raycast
+.config/wireshark
+.config/zed/.*
+.config/zed/prompts
+.config/zed/embeddings

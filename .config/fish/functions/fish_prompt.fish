@@ -1,0 +1,1 @@
+/Users/saulgoodman/.local/share/omf/themes/tweetjay/fish_prompt.fish

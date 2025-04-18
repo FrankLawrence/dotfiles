@@ -1,0 +1,18 @@
+[user]
+	name = FrankLawrence
+	email = frankl.am.htg@icloud.com
+	signingKey = 2B3F794BCFC928B3
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = false
+[core]
+	autocrlf = input
+	editor = nvim
+[alias]
+	st = status --short
+	hist = log --oneline --graph --all
+[merge]
+	tool = nvimdiff
+[pull]
+    rebase = false

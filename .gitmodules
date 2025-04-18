@@ -1,0 +1,3 @@
+[submodule ".config/zmk-config"]
+	path = .config/zmk-config
+	url = https://github.com/FrankLawrence/zmk-config/
