@@ -1,3 +1,6 @@
 [submodule ".config/zmk-config"]
 	path = .config/zmk-config
 	url = https://github.com/FrankLawrence/zmk-config/
+[submodule ".config/nvim-kickstart"]
+	path = .config/nvim-kickstart
+	url = https://github.com/FrankLawrence/kickstart-modular.nvim

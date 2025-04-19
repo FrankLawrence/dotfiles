@@ -8,3 +8,4 @@ htop
 .config/zed/.*
 .config/zed/prompts
 .config/zed/embeddings
+.config/qBittorrent
